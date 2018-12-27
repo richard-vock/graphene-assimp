@@ -4,9 +4,6 @@ include_directories("${PROJECT_SOURCE_DIR}/include")
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
-#set (OpenGL_GL_PREFERENCE "GLVND")
-#add_compile_options(-Wall -Wextra -Werror -Wno-maybe-uninitialized -fPIC -g -DIMGUI_IMPL_OPENGL_LOADER_GLEW)
-
 add_library(graphene-assimp
     "src/assimp.cpp"
 )
